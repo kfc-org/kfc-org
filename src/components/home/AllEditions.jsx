@@ -75,6 +75,8 @@ const AllEditions = () => {
                     fill
                     style={{ objectFit: 'cover' }}
                     className="hover:scale-105 transition duration-500"
+                    loading="eager"
+                    priority
                   />
                 </div>
                 <div className="p-6">

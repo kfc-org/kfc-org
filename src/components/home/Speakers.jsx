@@ -55,6 +55,8 @@ const Speakers = () => {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="group-hover:scale-105 transition duration-500"
+                  loading="eager"
+                  priority
                 />
               </div>
               <div className="p-6">

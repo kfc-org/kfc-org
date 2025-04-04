@@ -34,6 +34,8 @@ const Highlights = () => {
               fill
               style={{ objectFit: 'cover' }}
               className="rounded-xl transition duration-500"
+              loading="eager"
+              priority
             />
           </div>
 
@@ -49,6 +51,8 @@ const Highlights = () => {
                     src={image} 
                     alt={`Thumbnail ${index + 1}`} 
                     fill
+                    loading="eager"
+                    priority
                     style={{ objectFit: 'cover' }}
                   />
                 </div>

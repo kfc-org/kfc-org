@@ -23,7 +23,7 @@ const WhoWeAre = () => {
               By bringing together industry experts, successful entrepreneurs, and financial gurus to university campuses across Nigeria, we create an interactive platform where students can learn, network, and gain practical financial skills that will serve them throughout their lives.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+           {/*  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition">
                 <FiTarget className="text-primary text-3xl mb-3" />
                 <h4 className="font-semibold text-lg mb-2">Our Mission</h4>
@@ -41,7 +41,7 @@ const WhoWeAre = () => {
                 <h4 className="font-semibold text-lg mb-2">Our Approach</h4>
                 <p className="text-center text-gray-600 text-sm">Practical, interactive and campus-focused</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">
@@ -52,6 +52,8 @@ const WhoWeAre = () => {
                 fill
                 style={{ objectFit: 'cover' }}
                 className="rounded-xl"
+                loading="eager"
+                priority
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-lg shadow-xl">

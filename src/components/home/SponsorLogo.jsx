@@ -111,6 +111,8 @@ const SponsorLogo = () => {
                   fill
                   style={{ objectFit: 'contain' }}
                   className="grayscale hover:grayscale-0 transition duration-300"
+                  loading="eager"
+                  priority
                 />
               </div>
             ))}
