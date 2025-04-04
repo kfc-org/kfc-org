@@ -26,9 +26,10 @@ const EditionInfo = ({ description, stats }) => {
                   <div className="bg-primary/10 p-3 rounded-full">
                     <FiUsers className="text-primary text-xl" />
                   </div>
-                  <h4 className="text-xl font-semibold ml-3">Attendees</h4>
+                  <p className="text-3xl font-bold text-primary">{stats.attendees}</p>
                 </div>
-                <p className="text-3xl font-bold text-primary">{stats.attendees}</p>
+               
+                <h4 className="text-xl font-semibold ml-3">Attendees</h4>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -36,9 +37,9 @@ const EditionInfo = ({ description, stats }) => {
                   <div className="bg-primary/10 p-3 rounded-full">
                     <FiMic className="text-primary text-xl" />
                   </div>
-                  <h4 className="text-xl font-semibold ml-3">Speakers</h4>
+                  <p className="text-3xl font-bold text-primary">{stats.speakers}</p>
                 </div>
-                <p className="text-3xl font-bold text-primary">{stats.speakers}</p>
+                <h4 className="text-xl font-semibold ml-3">Speakers</h4>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -46,9 +47,9 @@ const EditionInfo = ({ description, stats }) => {
                   <div className="bg-primary/10 p-3 rounded-full">
                     <FiAward className="text-primary text-xl" />
                   </div>
-                  <h4 className="text-xl font-semibold ml-3">Workshops</h4>
+                  <p className="text-3xl font-bold text-primary">{stats.workshops}</p>
                 </div>
-                <p className="text-3xl font-bold text-primary">{stats.workshops}</p>
+                <h4 className="text-xl font-semibold ml-3">Workshops</h4>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -56,9 +57,9 @@ const EditionInfo = ({ description, stats }) => {
                   <div className="bg-primary/10 p-3 rounded-full">
                     <FiClock className="text-primary text-xl" />
                   </div>
-                  <h4 className="text-xl font-semibold ml-3">Hours</h4>
+                  <p className="text-3xl font-bold text-primary">{stats.hours}</p>
                 </div>
-                <p className="text-3xl font-bold text-primary">{stats.hours}</p>
+                <h4 className="text-xl font-semibold ml-3">Hours</h4>
               </div>
             </div>
           </div>
