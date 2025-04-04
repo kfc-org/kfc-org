@@ -1,5 +1,6 @@
 // src/components/home/PartnerWithUs.jsx
 "use client";
+import { useState } from 'react';
 import { FiArrowRight, FiUsers, FiBriefcase, FiBarChart2 } from 'react-icons/fi';
 import {motion} from "framer-motion";
 
@@ -8,7 +9,39 @@ const fadeInFrom = (direction = "left") => ({
   visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
 });
 
+
+
 const PartnerWithUs = () => {
+
+  const [status, setStatus] = useState('');
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/myzenojb', {
+        method: 'POST',
+        body: data,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+      
+      if (response.ok) {
+        // Form submitted successfully
+        setStatus('success');
+        form.reset(); // Clear all form fields
+      } else {
+        // Form submission failed
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
+  };
+
   return (
     <section className="section bg-primary text-white">
       <div className="container-custom">
@@ -72,63 +105,90 @@ const PartnerWithUs = () => {
             
            
           </motion.div>
-          
+
           <motion.div 
-          variants={fadeInFrom("right")} 
-          initial="hidden" 
-          whileInView="visible" 
-          viewport={{ once: false }}
-          className="bg-white rounded-xl p-8 shadow-xl">
-            <h3 className="text-primary text-2xl font-bold mb-6">Get In Touch</h3>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-gray-700 mb-2">Full Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  placeholder="Enter your full name" 
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-gray-700 mb-2">Email Address</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  placeholder="Enter your email address" 
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="company" className="block text-gray-700 mb-2">Company Name</label>
-                <input 
-                  type="text" 
-                  id="company" 
-                  placeholder="Enter your company name" 
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
-                <textarea 
-                  id="message" 
-                  rows="4" 
-                  placeholder="Tell us about your partnership interests" 
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800"
-                ></textarea>
-              </div>
-              
-              <button 
-                type="submit" 
-                className="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-primary-dark transition"
-              >
-                Submit Inquiry
-              </button>
-            </form>
-          </motion.div>
+      variants={fadeInFrom("right")} 
+      initial="hidden" 
+      whileInView="visible" 
+      viewport={{ once: false }}
+      className="bg-white rounded-xl p-8 shadow-xl">
+        <h3 className="text-primary text-2xl font-bold mb-6">Get In Touch</h3>
+        
+        {status === 'success' && (
+          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+            Thank you! Your message has been sent.
+          </div>
+        )}
+        
+        {status === 'error' && (
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+            Oops! There was an error sending your message. Please try again.
+          </div>
+        )}
+        
+        <form 
+          className="space-y-4"
+          onSubmit={handleSubmit}
+        >
+          <div>
+            <label htmlFor="name" className="block text-gray-700 mb-2">Full Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name"
+              placeholder="Enter your full name" 
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800"
+              required
+            />
+          </div>
+          
+          <div>
+            <label htmlFor="email" className="block text-gray-700 mb-2">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email"
+              placeholder="Enter your email address" 
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800"
+              required
+            />
+          </div>
+          
+          <div>
+            <label htmlFor="company" className="block text-gray-700 mb-2">Company Name</label>
+            <input 
+              type="text" 
+              id="company" 
+              name="company"
+              placeholder="Enter your company name" 
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800"
+            />
+          </div>
+          
+          <div>
+            <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
+            <textarea 
+              id="message" 
+              name="message"
+              rows="4" 
+              placeholder="Tell us about your partnership interests" 
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-800"
+              required
+            ></textarea>
+          </div>
+          
+          {/* Hidden field to specify forwarding email */}
+          <input type="hidden" name="_replyto" value="program@kfconference.org" />
+          
+          <button 
+            type="submit" 
+            className="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-primary-dark transition"
+            disabled={status === 'submitting'}
+          >
+            {status === 'submitting' ? 'Submitting...' : 'Submit Inquiry'}
+          </button>
+        </form>
+    </motion.div>
         </div>
       </div>
     </section>
