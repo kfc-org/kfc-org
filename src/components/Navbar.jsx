@@ -69,34 +69,34 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white rounded-lg mt-2 p-4 shadow-lg">
+          <div className="md:hidden bg-gray-900 rounded-lg mt-2 p-4 shadow-lg">
             <div className="flex flex-col space-y-4">
               <Link href="/" 
-                className="text-gray-800 hover:text-primary font-medium"
+                className="text-white hover:text-primary font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link href="/#about" 
-                className="text-gray-800 hover:text-primary font-medium"
+                className="text-white hover:text-primary font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link href="/#editions" 
-                className="text-gray-800 hover:text-primary font-medium"
+                className="text-white hover:text-primary font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Editions
               </Link>
               <Link href="/#speakers" 
-                className="text-gray-800 hover:text-primary font-medium"
+                className="text-white hover:text-primary font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Speakers
               </Link>
               <Link href="/#partners" 
-                className="text-gray-800 hover:text-primary font-medium"
+                className="text-white hover:text-primary font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Partners
