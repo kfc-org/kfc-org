@@ -18,13 +18,13 @@ const Footer = () => {
               Empowering young people with financial knowledge and skills to build a sustainable future.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-primary-light text-xl">
+              <a href="https://instagram.com/thekonohauniversity" className="text-gray-300 hover:text-primary-light text-xl">
                 <FiInstagram />
               </a>
-              <a href="#" className="text-gray-300 hover:text-primary-light text-xl">
+              <a href="https://x.com/thekonoha_fc" className="text-gray-300 hover:text-primary-light text-xl">
                 <FiTwitter />
               </a>
-              <a href="#" className="text-gray-300 hover:text-primary-light text-xl">
+              <a href="https://linkedin.com/company/the-konoha-university" className="text-gray-300 hover:text-primary-light text-xl">
                 <FiLinkedin />
               </a>
               {/* <a href="#" className="text-gray-300 hover:text-primary-light text-xl">
@@ -70,12 +70,12 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Editions</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/editions/unilag" className="text-gray-300 hover:text-primary-light">
+                <Link href="/unilag" className="text-gray-300 hover:text-primary-light">
                   KFC Unilag
                 </Link>
               </li>
               <li>
-                <Link href="/editions/futo" className="text-gray-300 hover:text-primary-light">
+                <Link href="/futo" className="text-gray-300 hover:text-primary-light">
                   KFC FUTO
                 </Link>
               </li>
