@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo and About */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center mb-4">
-              <Image src="/images/logo.png" alt="KFC Logo" width={40} height={40} />
+              <Image src="/images/logo.png" alt="KFC Logo" width={70} height={70} />
               {/* <span className="ml-2 font-bold text-lg">KFC</span> */}
             </div>
             <p className="text-gray-300 mb-6">
