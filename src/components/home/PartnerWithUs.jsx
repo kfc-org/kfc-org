@@ -114,18 +114,6 @@ const PartnerWithUs = () => {
       className="bg-white rounded-xl p-8 shadow-xl">
         <h3 className="text-primary text-2xl font-bold mb-6">Get In Touch</h3>
         
-        {status === 'success' && (
-          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-            Thank you! Your message has been sent.
-          </div>
-        )}
-        
-        {status === 'error' && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-            Oops! There was an error sending your message. Please try again.
-          </div>
-        )}
-        
         <form 
           className="space-y-4"
           onSubmit={handleSubmit}
@@ -176,6 +164,18 @@ const PartnerWithUs = () => {
               required
             ></textarea>
           </div>
+
+          {status === 'success' && (
+          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+            Thank you! Your message has been sent.
+          </div>
+        )}
+        
+        {status === 'error' && (
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+            Oops! There was an error sending your message. Please try again.
+          </div>
+        )}
           
           {/* Hidden field to specify forwarding email */}
           <input type="hidden" name="_replyto" value="program@kfconference.org" />
