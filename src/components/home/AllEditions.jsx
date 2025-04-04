@@ -98,7 +98,7 @@ const AllEditions = () => {
                   </div>
                   
                   <Link 
-                    href={`/editions/${edition.slug}`}
+                    href={`/${edition.slug}`}
                     className="text-primary font-medium flex items-center hover:text-primary-dark"
                   >
                     View Details <FiArrowRight className="ml-1" />
