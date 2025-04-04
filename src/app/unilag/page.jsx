@@ -128,7 +128,7 @@ export default function UnilagEdition() {
   ];
 
   const speakers = [
-    {
+    /* {
       name: "XeusTheGreat",
       title: "Web3 Business Developer",
       image: "/images/speakers/onlyoneapril.jpg",
@@ -137,7 +137,7 @@ export default function UnilagEdition() {
       name: "Cracky Brown",
       title: "Founder, Billionaires Club",
       image: "/images/speakers/onlyoneapril.jpg",
-    },
+    }, */
     {
       name: "OnlyOneApril",
       title: "Trader and Block-chain Developer.",
@@ -158,11 +158,11 @@ export default function UnilagEdition() {
       title: "Web3 Business Developer",
       image: "/images/speakers/princess.jpg",
     },
-    {
+    /* {
       name: "Defi Queen",
       title: "Web3 Business Developer",
       image: "/images/speakers/onlyoneapril.jpg",
-    },
+    }, */
     {
       name: "Witty Prince",
       title: "Founder Konoha University, KFC and Uniscope.",
