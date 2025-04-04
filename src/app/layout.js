@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'KFC - Konoha Financial Conference',
-  description: 'Empowering Youth Through Financial Education',
+  description: 'Empowering Youths Through Financial Education',
 };
 
 export default function RootLayout({ children }) {

@@ -6,9 +6,12 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  html,body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
   }
   
   body {

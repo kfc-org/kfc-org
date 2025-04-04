@@ -11,7 +11,7 @@ import Highlights from "@/components/home/Highlights";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden w-full">
       <Hero />
       <WhoWeAre />
       <EventFeatures />
