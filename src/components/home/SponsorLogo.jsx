@@ -109,7 +109,7 @@ const SponsorLogo = () => {
         viewport={{ once: false }}
         className="text-center mt-8">
           <a 
-            href="/become-sponsor" 
+            href="mailto:program@kfconference.org?subject=Request%20for%20Sponsorship%20Deck&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20sponsorship%20deck%20for%20your%20upcoming%20event.%0A%0AThank%20you%2C%0A" 
             className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition"
           >
             Become a Sponsor
