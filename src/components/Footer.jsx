@@ -98,16 +98,17 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <FiMail className="text-primary-light mt-1 mr-3" />
-                <span className="text-gray-300">info@konohafin.org</span>
+                <span className="text-gray-300">info@kfcglobal.org</span>
               </li>
               <li className="flex items-start">
                 <FiPhone className="text-primary-light mt-1 mr-3" />
-                <span className="text-gray-300">+234 800 KFC 1234</span>
+                <span className="text-gray-300">+234 905 961 2256</span>
               </li>
               <li className="flex items-start">
-                <FiMapPin className="text-primary-light mt-1 mr-3" />
-                <span className="text-gray-300">Konoha Financial District, Lagos, Nigeria</span>
+                <FiPhone className="text-primary-light mt-1 mr-3" />
+                <span className="text-gray-300">+234 907 521 1799</span>
               </li>
+              
             </ul>
           </div>
         </div>

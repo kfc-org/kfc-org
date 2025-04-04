@@ -54,7 +54,77 @@ export default function UnilagEdition() {
       src: "/images/unilag/img-6.jpg",
       alt: "Closing ceremony at KFC Unilag",
       caption: ""
-    }
+    },
+    {
+      src: "/images/unilag/img-7.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-8.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-9.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-10.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-11.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-12.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-13.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-14.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-15.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-16.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-17.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-18.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-19.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-20.jpg",
+      alt: "Closing ceremony at KFC Unilag",
+      caption: ""
+    },
   ];
 
   const speakers = [
@@ -76,12 +146,12 @@ export default function UnilagEdition() {
     {
       name: "Frank Samuel",
       title: "Founder, Financial Fitness Clinic.",
-      image: "/images/speakers/onlyoneapril.jpg",
+      image: "/images/speakers/frank-samuel.png",
     },
     {
       name: "Soropuchukwu",
       title: "Serial Investor and Trader",
-      image: "/images/speakers/onlyoneapril.jpg",
+      image: "/images/speakers/sopuruchukwu.png",
     },
     {
       name: "Defi Princess",
@@ -92,6 +162,11 @@ export default function UnilagEdition() {
       name: "Defi Queen",
       title: "Web3 Business Developer",
       image: "/images/speakers/onlyoneapril.jpg",
+    },
+    {
+      name: "Witty Prince",
+      title: "Founder Konoha University, KFC and Uniscope.",
+      image: "/images/speakers/prince.png",
     },
    
   ];
