@@ -4,8 +4,8 @@ import { FiUsers, FiBookOpen, FiMic, FiTrendingUp } from 'react-icons/fi';
 const stats = [
   {
     icon: <FiUsers className="text-3xl text-primary-light" />,
-    number: "1000+",
-    label: "Students Educated"
+    number: "3000+",
+    label: "Attendees"
   },
   {
     icon: <FiBookOpen className="text-3xl text-primary-light" />,
@@ -19,8 +19,8 @@ const stats = [
   },
   {
     icon: <FiTrendingUp className="text-3xl text-primary-light" />,
-    number: "2",
-    label: "Universities Reached"
+    number: "3.5M+",
+    label: "Social Media Impression"
   }
 ];
 
@@ -53,7 +53,7 @@ const EventByNumbers = () => {
 
         <div className="mt-16 text-center">
           <p className="text-xl italic text-gray-300 max-w-3xl mx-auto">
-            "Our goal is to reach 10,000 students across 10 universities by 2027, creating a generation of financially savvy young Nigerians."
+            "Our goal is to empower the next generation of financial leaders by providing them with the tools, knowledge, and community they need to succeed."
           </p>
         </div>
       </div>

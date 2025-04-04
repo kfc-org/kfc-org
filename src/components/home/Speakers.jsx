@@ -1,38 +1,77 @@
-// src/components/home/Speakers.jsx
+"use client";
 import Image from 'next/image';
-import { FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { motion } from 'framer-motion';
+import { useRef, useEffect, useState } from 'react';
 
 const speakers = [
   {
-    name: "Naruto Uzumaki",
-    role: "CEO, Konoha Investment Partners",
-    image: "/images/speakers/manifest.png",
-    linkedin: "#",
-    twitter: "#",
-    bio: "Financial expert with over 15 years of experience in investment banking and wealth management."
-  },
+    name: "Frank Samuel",
+    role: "Founder Financial Fitness Clinic.",
+    image: "/images/speakers/frank-samuel.png",
+    },
+    {
+      name: "Sarah Idahosa",
+      role: "Founder, Women In DeFi",
+      image: "/images/speakers/sarah.jpg",
+      },
   {
-    name: "Sakura Haruno",
-    role: "Financial Literacy Advocate",
-    image: "/images/speakers/onlyoneapril.jpg",
-    linkedin: "#",
-    twitter: "#",
-    bio: "Award-winning financial educator passionate about making finance accessible to young people."
-  },
+    name: "Jago Emmanuel",
+    role: "Head of Growth, Palremit",
+    image: "/images/speakers/palremit.jpg",
+    },
   {
-    name: "Sasuke Uchiha",
-    role: "Founder, Sharingan Capital",
-    image: "/images/speakers/iwuju.png",
-    linkedin: "#",
-    twitter: "#",
-    bio: "Serial entrepreneur who has built three successful fintech startups focused on financial inclusion."
-  },
-  
+    name: "Witty Prince",
+    role: "Founder Konoha University, KFC and Uniscope",
+    image: "/images/speakers/prince.png",
+    },
+    {
+      name: "The Crypto Doyen",
+      role: "Founder, Doyen CV",
+      image: "/images/speakers/doyen.png",
+      },
+        {
+      name: "King Manifest",
+      role: "Serial Investor",
+      image: "/images/speakers/manifest.png",
+      },
 ];
 
 const Speakers = () => {
+  const [width, setWidth] = useState(0);
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    // Get the width of the carousel container
+    if (sliderRef.current) {
+      setWidth(sliderRef.current.scrollWidth - sliderRef.current.offsetWidth);
+    }
+  }, []);
+
+  // Create duplicate arrays for infinite scrolling effect
+  const duplicatedSpeakers = [...speakers, ...speakers, ...speakers];
+
+  const SpeakerCard = ({ speaker }) => (
+    <div className="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition group min-w-[280px] mx-4">
+      <div className="relative w-full pt-[125%]">
+        <Image
+          src={speaker.image}
+          alt={speaker.name}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className="object-cover object-top group-hover:scale-105 transition duration-300"
+          loading="lazy"
+        />
+      </div>
+      
+      <div className="p-4 md:p-6">
+        <h3 className="text-lg md:text-xl font-semibold mb-1">{speaker.name}</h3>
+        <p className="text-gray-500 text-sm md:text-base mb-2 md:mb-3">{speaker.role}</p>
+      </div>
+    </div>
+  );
+
   return (
-    <section id="speakers" className="section bg-white">
+    <section id="speakers" className="section bg-white overflow-hidden">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Speakers</h2>
@@ -42,51 +81,33 @@ const Speakers = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {speakers.map((speaker, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition group"
-            >
-              <div className="relative h-80 w-full overflow-hidden">
-                <Image 
-                  src={speaker.image} 
-                  alt={speaker.name} 
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  className="group-hover:scale-105 transition duration-500"
-                  loading="eager"
-                  priority
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">{speaker.name}</h3>
-                <p className="text-primary mb-3">{speaker.role}</p>
-               {/*  <p className="text-gray-600 text-sm mb-4">{speaker.bio}</p> */}
-{/*                 <div className="flex space-x-3">
-                  <a 
-                    href={speaker.linkedin} 
-                    className="bg-gray-100 hover:bg-primary hover:text-white text-gray-600 p-2 rounded-full transition"
-                  >
-                    <FiLinkedin />
-                  </a>
-                  <a 
-                    href={speaker.twitter} 
-                    className="bg-gray-100 hover:bg-primary hover:text-white text-gray-600 p-2 rounded-full transition"
-                  >
-                    <FiTwitter />
-                  </a>
-                </div> */}
-              </div>
-            </div>
-          ))}
+        <div className="overflow-hidden">
+          <motion.div
+            ref={sliderRef}
+            className="flex"
+            initial={{ x: 0 }}
+            animate={{ 
+              x: [-width/3, 0], 
+              transition: { 
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 10,
+                ease: "linear"
+              }
+            }}
+            whileHover={{ animationPlayState: "paused" }}
+          >
+            {duplicatedSpeakers.map((speaker, index) => (
+              <SpeakerCard key={index} speaker={speaker} />
+            ))}
+          </motion.div>
         </div>
 
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <button className="btn-outline">
             View All Speakers
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

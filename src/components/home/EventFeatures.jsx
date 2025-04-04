@@ -5,7 +5,7 @@ const features = [
   {
     icon: <FiMessageCircle className="text-4xl text-primary" />,
     title: "Expert Talks",
-    description: "Learn from industry leaders and financial experts through keynote speeches and panel discussions."
+    description: "Learn from finance experts, startup founders, and successful entrepreneurs."
   },
   {
     icon: <FiBookOpen className="text-4xl text-primary" />,
@@ -19,13 +19,13 @@ const features = [
   },
   {
     icon: <FiAward className="text-4xl text-primary" />,
-    title: "Competitions",
-    description: "Test your knowledge and skills in exciting financial literacy competitions with prizes."
+    title: "Mentorship",
+    description: " We are committed to guiding young people on their journey to financial independence. "
   },
   {
     icon: <FiTrendingUp className="text-4xl text-primary" />,
     title: "Career Opportunities",
-    description: "Discover internship and job opportunities with our partner organizations."
+    description: "Access career, business, and investment opportunities that set you up for success"
   },
   {
     icon: <FiGift className="text-4xl text-primary" />,
@@ -42,7 +42,7 @@ const EventFeatures = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What Makes Our Events Special</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-gray-600">
-            Each KFC edition offers a comprehensive experience designed to make financial education engaging, practical, and impactful for university students.
+            Each KFC edition offers a comprehensive experience designed to make financial education engaging, practical, and impactful.
           </p>
         </div>
 

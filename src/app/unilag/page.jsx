@@ -14,112 +14,86 @@ export default function UnilagEdition() {
 
   const description = [
     "The inaugural edition of Konoha Financial Conference took place at the University of Lagos, bringing together students from various departments to learn essential financial skills and knowledge.",
-    "Over 500 students attended this groundbreaking event, which featured keynote speeches, panel discussions, and interactive workshops from leading financial experts and entrepreneurs.",
+    "Over 2000 students attended this groundbreaking event, which featured keynote speeches, panel discussions, and interactive workshops from leading financial experts and entrepreneurs.",
     "The KFC Unilag edition focused on introducing students to personal finance basics, investment opportunities for young Nigerians, and entrepreneurship in the digital age. Participants received resource kits with valuable materials to continue their financial education journey."
   ];
 
   const stats = {
-    attendees: "500+",
-    speakers: "12",
-    workshops: "5",
-    hours: "16"
+    attendees: "2000+",
+    speakers: "8",
+    workshops: "2",
   };
 
   const gallery = [
     {
       src: "/images/unilag/img-1.jpg",
       alt: "Opening ceremony of KFC Unilag",
-      caption: "Opening ceremony with packed auditorium"
+      caption: ""
     },
     {
       src: "/images/unilag/img-2.jpg",
       alt: "Panel discussion at KFC Unilag",
-      caption: "Industry experts discussing investment opportunities"
+      caption: ""
     },
     {
       src: "/images/unilag/img-3.jpg",
       alt: "Workshop session at KFC Unilag",
-      caption: "Students participating in hands-on financial workshop"
+      caption: ""
     },
     {
       src: "/images/unilag/img-4.jpg",
       alt: "Networking session at KFC Unilag",
-      caption: "Networking session between students and professionals"
+      caption: ""
     },
     {
       src: "/images/unilag/img-5.jpg",
       alt: "Award ceremony at KFC Unilag",
-      caption: "Winners of the financial literacy competition"
+      caption: ""
     },
     {
       src: "/images/unilag/img-6.jpg",
       alt: "Closing ceremony at KFC Unilag",
-      caption: "Group photo with all participants and speakers"
+      caption: ""
     }
   ];
 
   const speakers = [
     {
-      name: "Dr. Adebayo Johnson",
-      title: "Chief Economist, Konoha Bank",
-      bio: "Expert in macroeconomics with over 15 years of experience in the Nigerian financial sector.",
+      name: "XeusTheGreat",
+      title: "Web3 Business Developer",
       image: "/images/speakers/onlyoneapril.jpg",
-      
     },
     {
-      name: "Sarah Okonkwo",
-      title: "Founder, FinTech Academy",
-      bio: "Serial entrepreneur and educator passionate about making financial knowledge accessible to all.",
-      image: "/images/speakers/manifest.png",
-     
+      name: "Cracky Brown",
+      title: "Founder, Billionaires Club",
+      image: "/images/speakers/onlyoneapril.jpg",
     },
     {
-      name: "Tunde Bakare",
-      title: "Investment Analyst, Leaf Capital",
-      bio: "Specializes in emerging markets and investment opportunities for young professionals.",
-      image: "/images/speakers/iwuju.png",
-      
-    },
-   /*  {
-      name: "Amina Hassan",
-      title: "Personal Finance Coach",
-      bio: "Dedicated to helping students and young professionals achieve financial independence.",
-      image: "/images/speakers/speaker1.jpg",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      name: "OnlyOneApril",
+      title: "Trader and Block-chain Developer.",
+      image: "/images/speakers/onlyoneapril.jpg",
     },
     {
-      name: "Victor Olatunji",
-      title: "Tech Entrepreneur",
-      bio: "Founder of three successful startups with expertise in digital innovation and funding.",
-      image: "/images/speakers/speaker2.jpg",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      name: "Frank Samuel",
+      title: "Founder, Financial Fitness Clinic.",
+      image: "/images/speakers/onlyoneapril.jpg",
     },
     {
-      name: "Grace Egwu",
-      title: "Crypto & Blockchain Specialist",
-      bio: "Educator on digital currencies and blockchain technology for beginners.",
-      image: "/images/speakers/speaker3.jpg",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      name: "Soropuchukwu",
+      title: "Serial Investor and Trader",
+      image: "/images/speakers/onlyoneapril.jpg",
     },
     {
-      name: "Emeka Nduka",
-      title: "Stock Market Analyst",
-      bio: "Expert in Nigerian Stock Exchange with focus on opportunities for small investors.",
-      image: "/images/speakers/speaker1.jpg",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      name: "Defi Princess",
+      title: "Web3 Business Developer",
+      image: "/images/speakers/onlyoneapril.jpg",
     },
     {
-      name: "Folake Adeniran",
-      title: "Financial Literacy Advocate",
-      bio: "Founder of 'Money Matters for Youth' initiative with national recognition.",
-      image: "/images/speakers/speaker2.jpg",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
-    } */
+      name: "Defi Queen",
+      title: "Web3 Business Developer",
+      image: "/images/speakers/onlyoneapril.jpg",
+    },
+   
   ];
 
   return (
@@ -133,10 +107,10 @@ export default function UnilagEdition() {
       
       <main>
         <EditionHero 
-          title="KFC Unilag: Financial Literacy for All"
-          date="March 15-16, 2023"
-          location="University of Lagos Main Auditorium"
-          time="9:00 AM - 5:00 PM"
+          title="KFC Unilag: Young and Abundant"
+          date="Fri 22nd Nov, 2024"
+          location="FFS Lecture Theatre"
+          time="9:00 AM"
           backgroundImage="/images/unilag/img-4.jpg"
         />
         

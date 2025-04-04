@@ -8,18 +8,18 @@ const pastEditions = [
     id: 1,
     title: "KFC Unilag",
     image: "/images/unilag/img-4.jpg",
-    date: "March 15-16, 2024",
+    date: "Fri Nov 22nd, 2024",
     location: "University of Lagos",
-    attendees: "500+",
+    attendees: "2000+",
     slug: "unilag"
   },
   {
     id: 2,
     title: "KFC FUTO",
     image: "/images/futo/futo-1.jpg",
-    date: "November 10-11, 2023",
+    date: "Sat 6th April, 2024",
     location: "Federal University of Technology, Owerri",
-    attendees: "450+",
+    attendees: "2500+",
     slug: "futo"
   }
 ];
@@ -29,7 +29,7 @@ const upcomingEditions = [
     id: 3,
     title: "KFC Unibadan",
     image: "/images/ibadan.png",
-    date: "Coming Soon: October 2025",
+    date: "Coming Soon: July 2025",
     location: "University of Ibadan",
     slug: "#"
   },
@@ -37,7 +37,7 @@ const upcomingEditions = [
     id: 4,
     title: "KFC UniUyo",
     image: "/images/uyo.png",
-    date: "Coming Soon: December 2025",
+    date: "Coming Soon: Nov 2025",
     location: "University of Uyo",
     slug: "#"
   }

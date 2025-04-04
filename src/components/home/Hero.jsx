@@ -1,4 +1,5 @@
 // src/components/home/Hero.jsx
+"use client";
 import Link from 'next/link';
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -20,15 +21,18 @@ const Hero = () => {
       <div className="container-custom relative z-10 mt-16">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Empowering Youth Through Financial Education
+          Empowering Young Minds for Financial Freedom
           </h1>
           <p className="text-xl text-white/90 mb-8 max-w-2xl">
-            Konoha Financial Conference (KFC) bridges the gap between financial knowledge and young people across Nigeria's universities.
+          KFC (Konoha Financial Conference) is here to equip the next generation with the right knowledge and tools to take control of their financial future.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="btn-primary">
-              Request Sponsorship Deck <FiArrowRight className="ml-2" />
-            </button>
+          <button 
+          className="btn-primary"
+           onClick={() => window.location.href = 'mailto:sponsors@example.com?subject=Request%20for%20Sponsorship%20Deck&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20sponsorship%20deck%20for%20your%20upcoming%20event.%0A%0AThank%20you%2C%0A'}
+          >
+          Request Sponsorship Deck <FiArrowRight className="ml-2" />
+          </button>
             <Link href="/#editions" className="btn-outline text-white border-white hover:border-primary">
               Explore Our Editions
             </Link>

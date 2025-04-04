@@ -56,7 +56,7 @@ const EditionInfo = ({ description, stats }) => {
               </div>
               
               {/* Hours Stat Card */}
-              <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
+              {/* <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
                 <div className="flex items-center mb-3 md:mb-4">
                   <div className="bg-primary/10 p-2 md:p-3 rounded-full">
                     <FiClock className="text-primary text-lg md:text-xl" />
@@ -64,7 +64,7 @@ const EditionInfo = ({ description, stats }) => {
                   <p className="text-2xl md:text-3xl font-bold text-primary">{stats.hours}</p>
                 </div>
                 <h4 className="text-lg md:text-xl font-semibold ml-3">Hours</h4>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

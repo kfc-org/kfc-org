@@ -17,31 +17,27 @@ const WhoWeAre = () => {
               Bridging the Financial Knowledge Gap
             </h3>
             <p className="text-gray-700 mb-6">
-              Konoha Financial Conference (KFC) was founded with a clear mission: to empower young Nigerians with essential financial knowledge and skills that school curricula often overlook. We believe that financial literacy is a fundamental right that everyone deserves, regardless of their background or field of study.
+            The Konoha Financial Conference (KFC) is more than just an event—it’s a movement. Founded by Witty Prince, KFC was born from a deep passion to help young people gain financial independence.
             </p>
             <p className="text-gray-700 mb-8">
-              By bringing together industry experts, successful entrepreneurs, and financial gurus to university campuses across Nigeria, we create an interactive platform where students can learn, network, and gain practical financial skills that will serve them throughout their lives.
+            We bring together students, entrepreneurs, and finance experts to discuss a topic often ignored—money management and financial success. With over 71 virtual sessions and major in-person events, KFC is dedicated to closing the financial literacy gap and helping young Africans take charge of their future.
             </p>
 
-           {/*  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition">
                 <FiTarget className="text-primary text-3xl mb-3" />
                 <h4 className="font-semibold text-lg mb-2">Our Mission</h4>
-                <p className="text-center text-gray-600 text-sm">To democratize financial education among Nigerian youth</p>
+                <p className="text-center text-gray-600 text-sm">To equip young Africans with the financial knowledge and skills needed to thrive</p>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition">
                 <FiUsers className="text-primary text-3xl mb-3" />
                 <h4 className="font-semibold text-lg mb-2">Our Audience</h4>
-                <p className="text-center text-gray-600 text-sm">University students across all disciplines</p>
+                <p className="text-center text-gray-600 text-sm">Young professionals, aspiring entrepreneurs, and anyone eager to take control of their financial future</p>
               </div>
 
-              <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition">
-                <FiBookOpen className="text-primary text-3xl mb-3" />
-                <h4 className="font-semibold text-lg mb-2">Our Approach</h4>
-                <p className="text-center text-gray-600 text-sm">Practical, interactive and campus-focused</p>
-              </div>
-            </div> */}
+              
+            </div>
           </div>
 
           <div className="relative">

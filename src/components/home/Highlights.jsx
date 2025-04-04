@@ -22,7 +22,7 @@ const Highlights = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Highlights from Recent Editions</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-gray-600">
-            Take a glimpse into our vibrant conferences where students learn, engage, and transform their financial futures.
+            Take a glimpse into our vibrant conferences where youths learn, engage, and transform their financial futures.
           </p>
         </div>
 

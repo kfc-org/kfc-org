@@ -1,4 +1,5 @@
 // src/components/home/PartnerWithUs.jsx
+"use client";
 import { FiArrowRight, FiUsers, FiBriefcase, FiBarChart2 } from 'react-icons/fi';
 
 const PartnerWithUs = () => {
@@ -49,10 +50,15 @@ const PartnerWithUs = () => {
                 </div>
               </div>
             </div>
+
+            <button 
+          className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold inline-flex items-center"
+           onClick={() => window.location.href = 'mailto:sponsors@example.com?subject=Request%20for%20Sponsorship%20Deck&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20sponsorship%20deck%20for%20your%20upcoming%20event.%0A%0AThank%20you%2C%0A'}
+          >
+          Request Sponsorship Deck <FiArrowRight className="ml-2" />
+          </button>
             
-            <button className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold inline-flex items-center">
-              Request Sponsorship Deck <FiArrowRight className="ml-2" />
-            </button>
+           
           </div>
           
           <div className="bg-white rounded-xl p-8 shadow-xl">
