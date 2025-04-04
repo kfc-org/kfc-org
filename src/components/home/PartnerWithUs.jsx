@@ -65,7 +65,7 @@ const PartnerWithUs = () => {
 
             <button 
           className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold inline-flex items-center"
-           onClick={() => window.location.href = 'program@kfconference.org?subject=Request%20for%20Sponsorship%20Deck&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20sponsorship%20deck%20for%20your%20upcoming%20event.%0A%0AThank%20you%2C%0A'}
+           onClick={() => window.location.href = 'mailto:program@kfconference.org?subject=Request%20for%20Sponsorship%20Deck&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20sponsorship%20deck%20for%20your%20upcoming%20event.%0A%0AThank%20you%2C%0A'}
           >
           Request Sponsorship Deck <FiArrowRight className="ml-2" />
           </button>
