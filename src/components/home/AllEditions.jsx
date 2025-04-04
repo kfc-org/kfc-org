@@ -1,7 +1,14 @@
 // src/components/home/AllEditions.jsx
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
 import { FiArrowRight, FiCalendar, FiMapPin, FiUsers } from 'react-icons/fi';
+import {motion} from "framer-motion";
+
+const fadeInFrom = (direction = "left") => ({
+  hidden: { opacity: 0, x: direction === "left" ? -100 : 100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
+});
 
 const pastEditions = [
   {
@@ -47,16 +54,26 @@ const AllEditions = () => {
   return (
     <section id="editions" className="section bg-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <motion.div
+        variants={fadeInFrom("left")} 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: false }} 
+        className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Editions</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-gray-600">
             Explore our past and upcoming conferences across Nigerian universities.
           </p>
-        </div>
+        </motion.div>
 
         {/* Past Editions */}
-        <div className="mb-16">
+        <motion.div 
+        variants={fadeInFrom("right")} 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: false }}
+        className="mb-16">
           <h3 className="text-2xl font-semibold mb-8 flex items-center">
             <span className="bg-primary w-2 h-8 inline-block mr-3"></span>
             Past Editions
@@ -107,16 +124,26 @@ const AllEditions = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Upcoming Editions */}
         <div>
-          <h3 className="text-2xl font-semibold mb-8 flex items-center">
+          <motion.h3 
+          variants={fadeInFrom("left")} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: false }}
+          className="text-2xl font-semibold mb-8 flex items-center">
             <span className="bg-primary w-2 h-8 inline-block mr-3"></span>
             Upcoming Editions
-          </h3>
+          </motion.h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <motion.div 
+          variants={fadeInFrom("right")} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: false }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {upcomingEditions.map((edition) => (
               <div 
                 key={edition.id} 
@@ -153,7 +180,7 @@ const AllEditions = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -4,6 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+const fadeInFrom = (direction = "left") => ({
+  hidden: { opacity: 0, x: direction === "left" ? -100 : 100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
+});
+
 const sponsors = [
   {
     id: 1,
@@ -44,13 +49,18 @@ const SponsorLogo = () => {
   return (
     <section id="partners" className="section bg-white">
       <div className="container-custom">
-        <div className="text-center mb-12">
+        <motion.div 
+        variants={fadeInFrom("left")} 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: false }}
+        className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Sponsors and Partners</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-gray-600">
             We're grateful to these organizations for making KFC events possible across Nigeria.
           </p>
-        </div>
+        </motion.div>
         
         {/* Logo Slider */}
         <div className="relative overflow-hidden mb-8">
@@ -92,14 +102,19 @@ const SponsorLogo = () => {
         </div>
         
         {/* Become a Sponsor CTA */}
-        <div className="text-center mt-8">
+        <motion.div 
+        variants={fadeInFrom("right")} 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: false }}
+        className="text-center mt-8">
           <a 
             href="/become-sponsor" 
             className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition"
           >
             Become a Sponsor
           </a>
-        </div>
+        </motion.div>
       </div>
       
       {/* CSS for hiding scrollbar */}

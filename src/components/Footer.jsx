@@ -98,7 +98,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <FiMail className="text-primary-light mt-1 mr-3" />
-                <span className="text-gray-300">info@kfcglobal.org</span>
+                <span className="text-gray-300">program@kfconference.org</span>
               </li>
               <li className="flex items-start">
                 <FiPhone className="text-primary-light mt-1 mr-3" />

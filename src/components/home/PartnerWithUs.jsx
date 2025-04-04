@@ -1,13 +1,25 @@
 // src/components/home/PartnerWithUs.jsx
 "use client";
 import { FiArrowRight, FiUsers, FiBriefcase, FiBarChart2 } from 'react-icons/fi';
+import {motion} from "framer-motion";
+
+const fadeInFrom = (direction = "left") => ({
+  hidden: { opacity: 0, x: direction === "left" ? -100 : 100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
+});
 
 const PartnerWithUs = () => {
   return (
     <section className="section bg-primary text-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
+
+          <motion.div
+          variants={fadeInFrom("left")} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: false }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Partner With Us</h2>
             <p className="text-white/90 mb-8 text-lg">
               Join our mission to empower the next generation with essential financial knowledge. As a partner, you'll gain access to thousands of engaged students across Nigeria's top universities.
@@ -53,15 +65,20 @@ const PartnerWithUs = () => {
 
             <button 
           className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold inline-flex items-center"
-           onClick={() => window.location.href = 'mailto:sponsors@example.com?subject=Request%20for%20Sponsorship%20Deck&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20sponsorship%20deck%20for%20your%20upcoming%20event.%0A%0AThank%20you%2C%0A'}
+           onClick={() => window.location.href = 'program@kfconference.org?subject=Request%20for%20Sponsorship%20Deck&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20sponsorship%20deck%20for%20your%20upcoming%20event.%0A%0AThank%20you%2C%0A'}
           >
           Request Sponsorship Deck <FiArrowRight className="ml-2" />
           </button>
             
            
-          </div>
+          </motion.div>
           
-          <div className="bg-white rounded-xl p-8 shadow-xl">
+          <motion.div 
+          variants={fadeInFrom("right")} 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: false }}
+          className="bg-white rounded-xl p-8 shadow-xl">
             <h3 className="text-primary text-2xl font-bold mb-6">Get In Touch</h3>
             <form className="space-y-4">
               <div>
@@ -111,7 +128,7 @@ const PartnerWithUs = () => {
                 Submit Inquiry
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

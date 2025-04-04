@@ -3,6 +3,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 
+const fadeInFrom = (direction = "left") => ({
+  hidden: { opacity: 0, x: direction === "left" ? -100 : 100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
+});
+
 const speakers = [
   {
     name: "Frank Samuel",
@@ -73,13 +78,18 @@ const Speakers = () => {
   return (
     <section id="speakers" className="section bg-white overflow-hidden">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <motion.div 
+        variants={fadeInFrom("left")} 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: false }}
+        className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Speakers</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-gray-600">
             Learn from the best minds in finance, entrepreneurship, and financial education who share their knowledge and experience at our conferences.
           </p>
-        </div>
+        </motion.div>
 
         <div className="overflow-hidden">
           <motion.div

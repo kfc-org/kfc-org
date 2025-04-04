@@ -156,7 +156,7 @@ export default function UnilagEdition() {
     {
       name: "Defi Princess",
       title: "Web3 Business Developer",
-      image: "/images/speakers/onlyoneapril.jpg",
+      image: "/images/speakers/princess.jpg",
     },
     {
       name: "Defi Queen",
