@@ -42,7 +42,7 @@ const SponsorLogo = () => {
   const duplicatedSponsors = [...sponsors, ...sponsors, ...sponsors];
   
   return (
-    <section id="sponsors" className="section bg-white">
+    <section id="partners" className="section bg-white">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Sponsors and Partners</h2>
