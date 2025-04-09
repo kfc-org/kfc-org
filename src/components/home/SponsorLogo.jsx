@@ -39,11 +39,16 @@ const sponsors = [
     id: 6,
     name: "Blockchain Club",
     logo: "/images/sponsors/club.png",
-  }
+  },
+  {
+    id: 7,
+    name: "Orthodox",
+    logo: "/images/sponsors/ortho.png",
+  },
 ];
 
 const SponsorLogo = () => {
-  // We'll need to duplicate the sponsors array to create a seamless loop effect
+  
   const duplicatedSponsors = [...sponsors, ...sponsors, ...sponsors];
   
   return (

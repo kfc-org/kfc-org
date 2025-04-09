@@ -14,12 +14,12 @@ export default function UnilagEdition() {
 
   const description = [
     "The inaugural edition of Konoha Financial Conference took place at the University of Lagos, bringing together students from various departments to learn essential financial skills and knowledge.",
-    "Over 2000 students attended this groundbreaking event, which featured keynote speeches, panel discussions, and interactive workshops from leading financial experts and entrepreneurs.",
+    "Over 400 students attended this groundbreaking event, which featured keynote speeches, panel discussions, and interactive workshops from leading financial experts and entrepreneurs.",
     "The KFC Unilag edition focused on introducing students to personal finance basics, investment opportunities for young Nigerians, and entrepreneurship in the digital age. Participants received resource kits with valuable materials to continue their financial education journey."
   ];
 
   const stats = {
-    attendees: "2000+",
+    attendees: "400+",
     speakers: "8",
     workshops: "2",
   };
@@ -32,6 +32,11 @@ export default function UnilagEdition() {
     },
     {
       src: "/images/unilag/img-2.jpg",
+      alt: "Panel discussion at KFC Unilag",
+      caption: ""
+    },
+    {
+      src: "/images/unilag/img-21.jpg",
       alt: "Panel discussion at KFC Unilag",
       caption: ""
     },

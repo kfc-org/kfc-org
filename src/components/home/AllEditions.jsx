@@ -17,7 +17,7 @@ const pastEditions = [
     image: "/images/unilag/img-4.jpg",
     date: "Fri Nov 22nd, 2024",
     location: "University of Lagos",
-    attendees: "2000+",
+    attendees: "400+",
     slug: "unilag"
   },
   {
@@ -26,7 +26,7 @@ const pastEditions = [
     image: "/images/futo/futo-1.jpg",
     date: "Sat 6th April, 2024",
     location: "Federal University of Technology, Owerri",
-    attendees: "2500+",
+    attendees: "1100+",
     slug: "futo"
   }
 ];
@@ -34,7 +34,7 @@ const pastEditions = [
 const upcomingEditions = [
   {
     id: 3,
-    title: "KFC Unibadan",
+    title: "KFC UI",
     image: "/images/ibadan.png",
     date: "Coming Soon: July 2025",
     location: "University of Ibadan",
@@ -42,7 +42,7 @@ const upcomingEditions = [
   },
   {
     id: 4,
-    title: "KFC UniUyo",
+    title: "KFC UNIYO",
     image: "/images/uyo.png",
     date: "Coming Soon: Nov 2025",
     location: "University of Uyo",
@@ -174,9 +174,9 @@ const AllEditions = () => {
                     </div>
                   </div>
                   
-                  <button className="bg-primary/10 text-primary px-4 py-2 rounded-lg text-sm font-medium">
-                    Notify Me When Registration Opens
-                  </button>
+                  <a href="mailto:program@kfconference.org?subject=KF%20Conference%20Registration%20Notification&body=Hello,%0A%0APlease%20notify%20me%20when%20registration%20opens%20for%20the%20upcoming%20conference.%0A%0AThank%20you!" className="bg-primary/10 text-primary px-4 py-2 rounded-lg text-sm font-medium inline-block no-underline">
+                   Notify Me When Registration Opens
+                   </a>
                 </div>
               </div>
             ))}

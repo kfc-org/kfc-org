@@ -26,7 +26,7 @@ const stats = [
   },
   {
     icon: <FiTrendingUp className="text-3xl text-primary-light" />,
-    number: "3.5M+",
+    number: "5.5k+",
     label: "Social Media Impression"
   }
 ];

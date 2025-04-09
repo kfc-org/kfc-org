@@ -81,12 +81,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="#" className="text-gray-300 hover:text-primary-light">
-                  KFC Unibadan (Upcoming)
+                  KFC UI (Upcoming)
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-gray-300 hover:text-primary-light">
-                  KFC UniUyo (Upcoming)
+                  KFC UNIYO (Upcoming)
                 </Link>
               </li>
             </ul>

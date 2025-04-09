@@ -14,12 +14,12 @@ export default function FutoEdition() {
 
   const description = [
     "Following the success of our inaugural event, the Konoha Financial Conference expanded to the Federal University of Technology, Owerri (FUTO), reaching students in Eastern Nigeria.",
-    "The KFC FUTO edition welcomed over 2000 students from engineering, technology, and business programs, offering specialized financial education tailored to tech-oriented careers and entrepreneurship.",
+    "The KFC FUTO edition welcomed over 1000 students from engineering, technology, and business programs, offering specialized financial education tailored to tech-oriented careers and entrepreneurship.",
     "This edition focused on tech entrepreneurship, investment in technology startups, and financial management for tech professionals."
   ];
 
   const stats = {
-    attendees: "2000+",
+    attendees: "1100+",
     speakers: "9",
     workshops: "7",
   };
